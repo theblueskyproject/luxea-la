@@ -92,7 +92,7 @@
 
   .neigh-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 26px; margin-top: 22px; }
   @media (max-width: 760px) { .neigh-grid { grid-template-columns: repeat(2, 1fr); } }
-  .neigh-grid h3 { font-size: 17px; letter-spacing: 1px; color: var(--red); font-weight: 600; margin-bottom: 10px; text-transform: uppercase; }
+  .neigh-grid h3 { font-size: 27px; letter-spacing: 0.3px; color: var(--red); font-weight: 600; margin-bottom: 10px; text-transform: uppercase; }
   .neigh-grid p { font-size: 14.5px; color: var(--body); line-height: 1.85; }
   .sec-partner { font-size: 12px; color: var(--muted); margin-top: 4px; }
 
@@ -188,7 +188,7 @@
   a.text-link:hover { border-bottom-color: var(--red); }
 
   /* ---------- Sticky nav ---------- */
-  body { padding-top: 58px; }
+  body { padding-top: 66px; }
   .navbar {
     position: fixed; top: 0; left: 0; right: 0; z-index: 200;
     background: rgba(255,255,255,0.96); backdrop-filter: blur(6px);
@@ -196,16 +196,16 @@
   }
   .navbar-inner {
     max-width: 1080px; margin: 0 auto; padding: 0 40px;
-    height: 58px; display: flex; align-items: center; justify-content: space-between;
+    height: 66px; display: flex; align-items: center; justify-content: space-between;
   }
-  .navbar .nav-brand { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 14px; letter-spacing: 2px; color: #2B2B2B; text-decoration: none; }
+  .navbar .nav-brand { font-family: 'Poppins', sans-serif; font-weight: 500; font-size: 16px; letter-spacing: 2px; color: #2B2B2B; text-decoration: none; }
   .navbar .nav-links {
     display: flex; align-items: center; gap: 26px;
     overflow-x: auto; white-space: nowrap; -ms-overflow-style: none; scrollbar-width: none;
   }
   .navbar .nav-links::-webkit-scrollbar { display: none; }
   .navbar .nav-links a {
-    font-family: 'Inter', sans-serif; font-size: 11.5px; font-weight: 600; letter-spacing: 1px;
+    font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; letter-spacing: 1px;
     text-transform: uppercase; color: #2B2B2B; text-decoration: none; flex-shrink: 0;
   }
   .navbar .nav-links a:hover { color: #E8451F; }
@@ -214,9 +214,11 @@
   }
   .navbar .nav-links a.cta:hover { background: #E8451F; color: #fff; }
   @media (max-width: 560px) {
-    .navbar-inner { padding: 0 20px; }
+    .navbar-inner { padding: 0 16px; }
     .navbar .nav-brand { display: none; }
-    .navbar .nav-links { gap: 18px; }
+    .navbar .nav-links { gap: 14px; }
+    .navbar .nav-links a { font-size: 12px; }
+    .navbar .nav-links a.cta { padding: 6px 12px; }
   }
 </style>
 </head>
